@@ -210,7 +210,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      建一堆攝影機好好玩喔:D
+      
     </div>
   </div>
 
@@ -246,7 +246,7 @@
           <td>使用軌道攝影機至少繞一圈</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked="checked"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked=""></td>
           <td id="m5">2</td>
           <td>更換其他場景、豐富的運鏡</td>
         </tr>
@@ -256,8 +256,10 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
-    <div class="col-md-12 twenty">
-      <iframe width="1344" height="756" src="./電腦動畫 111-1_files/vNTfOnh2xXA.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <div class="col-md-12 twenty d-flex justify-content-center">
+      <video id="video1" style="width:100%;max-width:100%;" controls="">
+          <source src="video/hw10.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
@@ -301,7 +303,7 @@
       score += parseInt(d3.select('#m4').html());   
     }
 
-    if (d3.select("#myCheckbox5").property){
+    if (d3.select("#myCheckbox5").property("checked")){
       score += parseInt(d3.select('#m5').html());   
     }
 
